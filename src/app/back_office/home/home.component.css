@@ -1,0 +1,22 @@
+.page {
+    /* color: white; */
+    padding: 0 1rem;
+    background: #f1f5f9;
+  }
+  
+  .page__box {
+    min-height: 50px;
+    background: #204fbd;
+    margin: 0 -1rem;
+    font-size: 36px;
+    color: white;
+  }
+
+  .add_btn {
+    color: #204fbd;
+    background-color: white;
+  }
+  
+  
+
+  
