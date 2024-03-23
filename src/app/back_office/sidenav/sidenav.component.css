@@ -1,0 +1,19 @@
+.logo {
+  text-align: center;
+  padding: 2.6rem 1rem;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.mat-divider {
+  border-top-width: 2px;
+  border-color: white;
+}
+.x {
+  color: aliceblue;
+}
+span {
+  color: white !important;
+}
