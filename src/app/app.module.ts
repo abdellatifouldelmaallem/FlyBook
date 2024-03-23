@@ -8,6 +8,7 @@ import { HeaderComponent } from './back_office/header/header.component';
 import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
 import { HomeComponent } from './back_office/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './back_office/home/home.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
