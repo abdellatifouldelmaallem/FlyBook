@@ -5,15 +5,14 @@
 
 .logo img {
   width: 200px;
+  border-radius: 5px;
 }
 
 .mat-divider {
   border-top-width: 2px;
   border-color: white;
 }
-.x {
-  color: aliceblue;
-}
-span {
-  color: white !important;
+
+.aligned-icon mat-icon {
+  margin-right: 5px;
 }
