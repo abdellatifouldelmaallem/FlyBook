@@ -16,6 +16,16 @@
     color: #204fbd;
     background-color: white;
   }
+
+  .add_btn:hover {
+    color: white;
+    background-color: #204fbd;
+    border: 1px #f1f5f9 solid;
+  }
+
+  .add_icon{
+    padding-top: 5px;
+  }
   
   
 
