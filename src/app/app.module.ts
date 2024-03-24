@@ -8,6 +8,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +21,8 @@ import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
 import { HomeComponent } from './back_office/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FlightComponent } from './back_office/flight/flight/flight.component';
+import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,9 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     ProfileComponent,
     UsersComponent,
-    HomeComponent
+    HomeComponent,
+    FlightComponent,
+    FlightFormComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,11 @@ import { AppRoutingModule } from './app-routing.module';
     MatDividerModule,
     MatListModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
