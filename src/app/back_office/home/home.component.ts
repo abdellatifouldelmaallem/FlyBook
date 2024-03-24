@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { Flight } from '../common/interface/flightProp';
 import { Flights } from '../common/data/flight';
 import { MatDialog } from '@angular/material/dialog';
-import {FlightFormComponent} from '../flight/flight-form/flight-form.component'
+import {FlightFormComponent} from '../flight/flight-form/flight-form.component';
+import { ConfirmationDeleteComponent } from '../shared/confirmation.delete/confirmation.delete.component';
 
 
 @Component({
@@ -24,6 +25,21 @@ export class HomeComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+
+  dalete(){
+    const dialogRef = this.dialog.open(ConfirmationDeleteComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // User confirmed deletion, proceed with delete action
+        console.log('Item deleted');
+      } else {
+        // User canceled deletion, do nothing or provide feedback
+        console.log('Deletion canceled');
+      }
+    });
+
   }
 
 }

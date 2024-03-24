@@ -23,6 +23,7 @@ import { HomeComponent } from './back_office/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlightComponent } from './back_office/flight/flight/flight.component';
 import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
+import { ConfirmationDeleteComponent } from './back_office/shared/confirmation.delete/confirmation.delete.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FlightFormComponent } from './back_office/flight/flight-form/flight-for
     UsersComponent,
     HomeComponent,
     FlightComponent,
-    FlightFormComponent
+    FlightFormComponent,
+    ConfirmationDeleteComponent
   ],
   imports: [
     BrowserModule,
