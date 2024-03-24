@@ -31,7 +31,7 @@
         <td>{{ flight.price }}</td>
         <td>{{ flight.seat }}</td>
         <td class="d-flex">
-          <button mat-icon-button matTooltip="edit"  class="yellowText">
+          <button mat-icon-button matTooltip="edit"  class="yellowText" (click)="edit()">
             <mat-icon>edit</mat-icon>
           </button>
           <button mat-icon-button matTooltip="delete" color="warn" (click)="dalete()">

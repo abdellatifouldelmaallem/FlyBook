@@ -4,6 +4,7 @@ import { Flights } from '../common/data/flight';
 import { MatDialog } from '@angular/material/dialog';
 import {FlightFormComponent} from '../flight/flight-form/flight-form.component';
 import { ConfirmationDeleteComponent } from '../shared/confirmation.delete/confirmation.delete.component';
+import { EditFlightComponent } from '../flight/Form/edit-flight/edit-flight.component';
 
 
 @Component({
@@ -40,6 +41,16 @@ export class HomeComponent {
       }
     });
 
+  }
+
+  edit(){
+    const dialogRef = this.dialog.open(EditFlightComponent, {
+      width: '600px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
 }
