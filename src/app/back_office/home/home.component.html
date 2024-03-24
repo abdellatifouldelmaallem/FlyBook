@@ -1,71 +1,43 @@
 <div class="container page">
-    <div class="d-flex justify-content-between page__box p-3 mt-2">
-      <span class="pt-2">Status</span>
-      <button type="button" class="btn btn-primary add_btn">
-        <mat-icon class="add_icon">add</mat-icon>Add flight
-      </button>
-    </div>
-
-    <table class="table table-striped table-hover table-bordered border-primary mt-2">
-      <thead>
-        <tr>
-          <th scope="col">flight code</th>
-          <th scope="col">time take off</th>
-          <th scope="col">time landing</th>
-          <th scope="col">from city</th>
-          <th scope="col">to city</th>
-          <th scope="col">airport from</th>
-          <th scope="col">airport to</th>
-          <th scope="col">airline</th>
-          <th scope="col">price (MAD)</th>
-          <th scope="col">seat namber</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">AT3433</th>
-          <td>08-08-24 09:10 am</td>
-          <td>08-08-24 12:10 am</td>
-          <td>paris</td>
-          <th scope="row">casablanca</th>
-          <td>POL</td>
-          <td>CMD</td>
-          <td>ROYAL AIR MAROC</td>
-          <th scope="row">2000</th>
-          <td>A12</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">AT3433</th>
-          <td>08-08-24 09:10 am</td>
-          <td>08-08-24 12:10 am</td>
-          <td>paris</td>
-          <th scope="row">casablanca</th>
-          <td>POL</td>
-          <td>CMD</td>
-          <td>ROYAL AIR MAROC</td>
-          <th scope="row">2000</th>
-          <td>A12</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">AT3433</th>
-          <td>08-08-24 09:10 am</td>
-          <td>08-08-24 12:10 am</td>
-          <td>paris</td>
-          <th scope="row">casablanca</th>
-          <td>POL</td>
-          <td>CMD</td>
-          <td>ROYAL AIR MAROC</td>
-          <th scope="row">2000</th>
-          <td>A12</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-      </tbody>
-    </table>  
+  <div class="d-flex justify-content-between page__box p-3 mt-2">
+    <span class="pt-2">Status</span>
+    <button type="button" class="btn btn-primary add_btn">
+      <mat-icon class="add_icon">add</mat-icon>Add flight
+    </button>
   </div>
+
+  <table class="table table-striped table-hover table-bordered border-primary mt-2">
+    <thead>
+      <tr>
+        <th scope="col">flight code</th>
+        <th scope="col">time take off</th>
+        <th scope="col">time landing</th>
+        <th scope="col">from city</th>
+        <th scope="col">to city</th>
+        <th scope="col">airport from</th>
+        <th scope="col">airport to</th>
+        <th scope="col">airline</th>
+        <th scope="col">price (MAD)</th>
+        <th scope="col">seat number</th>
+        <th scope="col">doCheckin</th>
+        <th scope="col">Last</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flights">
+        <td>{{ flight.flightCode }}</td>
+        <td>{{ flight.timeTakeOff }}</td>
+        <td>{{ flight.timeLanding }}</td>
+        <td>{{ flight.fromCity }}</td>
+        <td>{{ flight.toCity }}</td>
+        <td>{{ flight.airportFrom }}</td>
+        <td>{{ flight.airportTo }}</td>
+        <td>{{ flight.airline }}</td>
+        <td>{{ flight.price }}</td>
+        <td>{{ flight.seatNumber }}</td>
+        <td>{{ flight.checkin }}</td>
+        <td>{{ flight.last }}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>

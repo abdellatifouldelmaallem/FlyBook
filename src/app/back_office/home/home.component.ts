@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Flight } from '../common/interface/flightProp';
+import { Flights } from '../common/data/flight';
+
 
 @Component({
   selector: 'app-home',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  flights: Flight[] = Flights;
 
 }
