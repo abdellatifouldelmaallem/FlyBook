@@ -1,14 +1,11 @@
-export interface Flight{
-    flightCode: string;
-    timeTakeOff: string;
-    timeLanding: string;
-    fromCity: string;
-    toCity: string;
-    airportFrom: string;
-    airportTo: string;
+export interface Flight {
+    flightName: string;
+    date: string;
+    from: string;
+    to: string;
+    airport: string;
     airline: string;
     price: number;
-    seatNumber: string;
-    checkin:boolean;
-    last: string;
-}
+    seat: string;
+  }
+  
