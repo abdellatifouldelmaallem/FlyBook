@@ -1,6 +1,4 @@
 .page {
-    /* color: white; */
-    padding: 0 1rem;
     background: #f1f5f9;
   }
   
@@ -25,6 +23,10 @@
 
   .add_icon{
     padding-top: 5px;
+  }
+
+  .yellowText {
+    color: rgb(255, 193, 7);
   }
   
   
