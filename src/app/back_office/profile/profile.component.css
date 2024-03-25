@@ -1,0 +1,21 @@
+.image{
+    width: 200px;
+}
+
+.page__box {
+    min-height: 50px;
+    background: #204fbd;
+    margin: 0 -1rem;
+    font-size: 36px;
+    color: white;
+    padding: 28px;
+  }
+
+  .email{
+    color: #204fbd;
+  }
+
+  .info{
+    margin-top: 6%;
+    margin-left: 6%;
+  }
