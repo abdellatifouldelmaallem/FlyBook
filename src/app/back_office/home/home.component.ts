@@ -24,7 +24,7 @@ export class HomeComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      console.log('Dialog closed with result:', result);
     });
   }
 
@@ -33,10 +33,8 @@ export class HomeComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        // User confirmed deletion, proceed with delete action
         console.log('Item deleted');
       } else {
-        // User canceled deletion, do nothing or provide feedback
         console.log('Deletion canceled');
       }
     });
