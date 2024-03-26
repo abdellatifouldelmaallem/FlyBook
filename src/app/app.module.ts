@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -60,6 +61,7 @@ import { TicketComponent } from './back_office/ticket/ticket.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
