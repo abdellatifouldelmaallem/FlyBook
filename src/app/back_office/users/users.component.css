@@ -1,0 +1,11 @@
+.page__box {
+    min-height: 50px;
+    background: #204fbd;
+    margin: 0 -1rem;
+    font-size: 36px;
+    color: white;
+  }
+
+  .yellowText {
+    color: rgb(255, 193, 7);
+  }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from '../common/interface/UserProp';
+import { Users } from '../common/data/users';
 
 @Component({
   selector: 'app-users',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class UsersComponent {
 
+  Users: User[] = Users;
 }
