@@ -1,0 +1,39 @@
+<div class="container page">
+    <div class="d-flex justify-content-between page__box p-3">
+      <span class="p-3">Tickets</span>
+    </div>
+  
+    <div class="d-flex flex-column mt-5 ">
+     <app-statistics></app-statistics>
+     
+      <table class="table table-striped table-hover table-bordered border-primary mt-5">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">User Name</th>
+              <th scope="col">Flight Name</th>
+              <th scope="col">Payement_Id</th>
+              <th scope="col">amount</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ticket of Tickets">
+              <td>{{ ticket.id }}</td>
+              <td>{{ ticket.userName}}</td>
+              <td>{{ ticket.flightName }}</td>
+              <td>{{ ticket.paymentId }}</td>
+              <td>{{ ticket.amount }}</td>
+              <td class="d-flex">
+                <button mat-icon-button matTooltip="edit"  class="yellowText" >
+                  <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="delete" color="warn" >
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+      </table>  
+    </div>
+  </div>

@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
 import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
+import { TicketComponent } from './back_office/ticket/ticket.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'add_flight', component: FlightFormComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'tickets', component: TicketComponent },
 ];
 
 @NgModule({
