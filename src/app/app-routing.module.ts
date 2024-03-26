@@ -4,13 +4,14 @@ import { HomeComponent } from './back_office/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
 import { ProfileComponent } from './back_office/profile/profile.component';
+import { UsersComponent } from './back_office/users/users.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'add_flight', component: FlightFormComponent },
   { path: 'profile', component: ProfileComponent },
-  // { path: 'dashboard', component:  },
+  { path: 'users', component: UsersComponent },
 ];
 
 @NgModule({
