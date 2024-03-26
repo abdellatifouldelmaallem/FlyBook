@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from '../common/interface/UserProp';
+import { User } from '../common/interface/userProp';
 import { Users } from '../common/data/users';
 
 @Component({

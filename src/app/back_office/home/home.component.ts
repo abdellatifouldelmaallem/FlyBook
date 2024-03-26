@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Flight } from '../common/interface/flightProp';
-import { Flights } from '../common/data/flight';
+import { Flights } from '../common/data/flights';
 import { MatDialog } from '@angular/material/dialog';
 import {FlightFormComponent} from '../flight/flight-form/flight-form.component';
 import { ConfirmationDeleteComponent } from '../shared/confirmation.delete/confirmation.delete.component';
