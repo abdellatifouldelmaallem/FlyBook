@@ -1,9 +1,12 @@
 <div class="container page">
-    <div class="d-flex justify-content-between page__box p-3">
-      <span class="pt-2 ps-2">Users</span>
-    </div>
+  <div class="d-flex justify-content-between page__box p-3">
+    <span class="pt-2 ps-2">Users</span>
+  </div>
 
-    <table class="table table-striped table-hover table-bordered border-primary mt-2">
+  <div class="d-flex flex-column mt-5 ">
+   <app-statistics></app-statistics>
+   
+    <table class="table table-striped table-hover table-bordered border-primary mt-5">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -31,5 +34,6 @@
             </td>
           </tr>
         </tbody>
-      </table>  
+    </table>  
+  </div>
 </div>
