@@ -1,1 +1,18 @@
-<p>flight works!</p>
+<div class="container page">
+    <div class="d-flex justify-content-between page__box p-3">
+      <span class="p-3">Flights</span>
+    </div>
+
+    <div class="d-flex flex-column mt-5 ">
+        <app-statistics></app-statistics>
+
+        <div class="position-relative">
+            <highcharts-chart
+            [Highcharts] = "Highcharts" 
+            [options] = "chratOptions" 
+            class="chart position-absolute">
+            </highcharts-chart>
+        </div>
+
+    </div>
+</div>
