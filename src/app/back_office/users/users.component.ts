@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from '../common/interface/UserProp';
+import { User } from '../common/interface/userProp';
 import { Users } from '../common/data/users';
 import { ConfirmationDeleteComponent } from '../shared/confirmation.delete/confirmation.delete.component';
 import { MatDialog } from '@angular/material/dialog';
