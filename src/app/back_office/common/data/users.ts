@@ -1,4 +1,4 @@
-import { User } from '../interface/userProp';
+import { User } from '../interface/UserProp';
 
 export const Users: User[] = [
   {
