@@ -1,0 +1,14 @@
+.informatin{
+    border-right: 10px #204fbd solid;
+    padding: 20px;
+  }
+
+  span{
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .icon{
+    font-size: 60px;
+    margin-left: 20px;
+  }

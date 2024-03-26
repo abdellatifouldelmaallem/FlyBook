@@ -25,6 +25,7 @@ import { FlightComponent } from './back_office/flight/flight/flight.component';
 import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
 import { ConfirmationDeleteComponent } from './back_office/shared/confirmation.delete/confirmation.delete.component';
 import { EditFlightComponent } from './back_office/flight/Form/edit-flight/edit-flight.component';
+import { StatisticsComponent } from './back_office/shared/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EditFlightComponent } from './back_office/flight/Form/edit-flight/edit-
     FlightComponent,
     FlightFormComponent,
     ConfirmationDeleteComponent,
-    EditFlightComponent
+    EditFlightComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
