@@ -6,6 +6,7 @@ import { FlightFormComponent } from './back_office/flight/flight-form/flight-for
 import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
 import { TicketComponent } from './back_office/ticket/ticket.component';
+import { FlightComponent } from './back_office/flight/flight/flight.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
   { path: 'tickets', component: TicketComponent },
+  { path: 'flights', component: FlightComponent },
 ];
 
 @NgModule({
