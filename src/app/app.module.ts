@@ -28,6 +28,10 @@ import { ConfirmationDeleteComponent } from './back_office/shared/confirmation.d
 import { EditFlightComponent } from './back_office/flight/Form/edit-flight/edit-flight.component';
 import { StatisticsComponent } from './back_office/shared/statistics/statistics.component';
 import { TicketComponent } from './back_office/ticket/ticket.component';
+import { CitiesComponent } from './front_office/cities/cities.component';
+import { FooterComponent } from './front_office/footer/footer.component';
+import { HomeComponent } from './front_office/home/home.component';
+import { SearchFlightComponent } from './front_office/search-flight/search-flight.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { TicketComponent } from './back_office/ticket/ticket.component';
     ConfirmationDeleteComponent,
     EditFlightComponent,
     StatisticsComponent,
-    TicketComponent
+    TicketComponent,
+    CitiesComponent,
+    FooterComponent,
+    HomeComponent,
+    SearchFlightComponent
   ],
   imports: [
     BrowserModule,
