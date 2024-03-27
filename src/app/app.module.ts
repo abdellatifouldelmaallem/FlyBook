@@ -23,7 +23,7 @@ import { UsersComponent } from './back_office/users/users.component';
 import { StatusComponent } from './back_office/status/status.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlightComponent } from './back_office/flight/flight/flight.component';
-import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
+import { AddFlightComponent } from './back_office/flight/Form/add-flight/add-flight.component';
 import { ConfirmationDeleteComponent } from './back_office/shared/confirmation.delete/confirmation.delete.component';
 import { EditFlightComponent } from './back_office/flight/Form/edit-flight/edit-flight.component';
 import { StatisticsComponent } from './back_office/shared/statistics/statistics.component';
@@ -38,7 +38,7 @@ import { TicketComponent } from './back_office/ticket/ticket.component';
     UsersComponent,
     StatusComponent,
     FlightComponent,
-    FlightFormComponent,
+    AddFlightComponent,
     ConfirmationDeleteComponent,
     EditFlightComponent,
     StatisticsComponent,

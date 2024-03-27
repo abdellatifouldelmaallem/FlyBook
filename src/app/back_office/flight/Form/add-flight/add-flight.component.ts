@@ -3,13 +3,13 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-flight-form',
-  templateUrl: './flight-form.component.html',
-  styleUrls: ['./flight-form.component.css']
+  selector: 'app-add-flight',
+  templateUrl: './add-flight.component.html',
+  styleUrls: ['./add-flight.component.css']
 })
-export class FlightFormComponent implements OnInit {
+export class AddFlightComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<FlightFormComponent>,
+  constructor(public dialogRef: MatDialogRef<AddFlightComponent>,
              @Inject(MAT_DIALOG_DATA) public data: any,
               private fb: FormBuilder) {}
 
