@@ -8,11 +8,11 @@ import { EditFlightComponent } from '../flight/Form/edit-flight/edit-flight.comp
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-status',
+  templateUrl: './status.component.html',
+  styleUrls: ['./status.component.css']
 })
-export class HomeComponent {
+export class StatusComponent {
 
   constructor(public dialog: MatDialog) {}
 

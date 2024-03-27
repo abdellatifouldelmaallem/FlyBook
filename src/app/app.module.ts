@@ -20,7 +20,7 @@ import { SidenavComponent } from './back_office/sidenav/sidenav.component';
 import { HeaderComponent } from './back_office/header/header.component';
 import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
-import { HomeComponent } from './back_office/home/home.component';
+import { StatusComponent } from './back_office/status/status.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlightComponent } from './back_office/flight/flight/flight.component';
 import { FlightFormComponent } from './back_office/flight/flight-form/flight-form.component';
@@ -36,7 +36,7 @@ import { TicketComponent } from './back_office/ticket/ticket.component';
     HeaderComponent,
     ProfileComponent,
     UsersComponent,
-    HomeComponent,
+    StatusComponent,
     FlightComponent,
     FlightFormComponent,
     ConfirmationDeleteComponent,
