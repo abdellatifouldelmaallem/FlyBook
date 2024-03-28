@@ -7,15 +7,17 @@ import { ProfileComponent } from './back_office/profile/profile.component';
 import { UsersComponent } from './back_office/users/users.component';
 import { TicketComponent } from './back_office/ticket/ticket.component';
 import { FlightComponent } from './back_office/flight/flight/flight.component';
+import { HomeComponent } from './front_office/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'status', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'status', component: StatusComponent },
   { path: 'add_flight', component: AddFlightComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
   { path: 'tickets', component: TicketComponent },
   { path: 'flights', component: FlightComponent },
+  { path: 'home', component: HomeComponent },
 ];
 
 @NgModule({
