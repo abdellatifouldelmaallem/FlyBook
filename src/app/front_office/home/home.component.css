@@ -51,3 +51,7 @@
   color: white;
   background-color: #3d98f9;
 }
+
+.container-fluid{
+  height: 54px !important;
+}
