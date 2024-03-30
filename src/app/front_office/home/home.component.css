@@ -55,3 +55,40 @@
 .container-fluid{
   height: 54px !important;
 }
+
+.nav-link {
+  font-size: 14px;
+  padding: 20px 0px;
+  margin: 0px 20px;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.nav-link::before {
+  width: 80%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.nav-link:hover::before {
+  bottom: 10px;
+  opacity: 1;
+}
