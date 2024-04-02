@@ -80,3 +80,8 @@
 .wrapper a:hover {
     color: #039BE5;
 }
+
+.text-danger{
+    padding-left: 10px;
+    margin-bottom: 19px;
+}
