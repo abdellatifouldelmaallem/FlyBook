@@ -1,11 +1,20 @@
+section{
+    background-color: #039BE5;
+    height: 100%;
+    position: relative;
+}
+
 .wrapper {
     max-width: 350px;
     min-height: 500px;
-    margin: 80px auto;
+    margin:  auto;
+    position: absolute;
+    top: 10%;
+    left: 40%;
     padding: 40px 30px 30px 30px;
     background-color: #ecf0f3;
     border-radius: 15px;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    box-shadow: 13px 13px 20px #527da8, -13px -13px 20px #4791c6;
 }
 
 .logo {

@@ -1,22 +1,32 @@
-<div class="wrapper">
-    <div class="logo">
-        <img src="../../../assets/image/logo.jfif" alt="">
-    </div>
-    <div class="text-center mt-4 name">
-        fly with us
-    </div>
-    <form class="p-3 mt-3">
-        <div class="form-field d-flex align-items-center">
-            <span class="far fa-user"></span>
-            <input type="text" name="userName" id="userName" placeholder="Username">
+<section>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="../../../assets/image/logo.jfif" alt="">
         </div>
-        <div class="form-field d-flex align-items-center">
-            <span class="fas fa-key"></span>
-            <input type="password" name="password" id="pwd" placeholder="Password">
+        <div class="text-center mt-4 name">
+            fly with us
         </div>
-        <button class="btn mt-3">sign-in</button>
-    </form>
-    <div class="text-center fs-6">
-        <a href="#">Forget password?</a> or <a routerLink="/sign-up">Sign up</a>
+        <form class="p-3 mt-3" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" formControlName="email" name="email" id="email" placeholder="email">
+            </div>
+            <div *ngIf="f['email']?.invalid && (f['email']?.dirty || f['email']?.touched)" class="text-danger">
+                <div *ngIf="f['email']?.errors?.['required']">Email is required.</div>
+                <div *ngIf="f['email']?.errors?.['email']">Invalid email format.</div>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" formControlName="password" name="password" id="pwd" placeholder="Password" >
+            </div>
+            <div *ngIf="f['password']?.invalid && (f['password']?.dirty || f['password']?.touched)" class="text-danger">
+                <div *ngIf="f['password']?.errors?.['required']">Password is required.</div>
+                <div *ngIf="f['password']?.errors?.['minlength']">Password must be at least 4 characters long.</div>
+            </div>
+            <button class="btn mt-3">sign in</button>
+        </form>
+        <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a routerLink="/sign-up">Sign up</a>
+        </div>
     </div>
-</div>
+</section>
