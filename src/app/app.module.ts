@@ -32,6 +32,8 @@ import { CitiesComponent } from './front_office/cities/cities.component';
 import { FooterComponent } from './front_office/footer/footer.component';
 import { HomeComponent } from './front_office/home/home.component';
 import { SearchFlightComponent } from './front_office/search-flight/search-flight.component';
+import { SignInComponent } from './front_office/sign-in/sign-in.component';
+import { SignUpComponent } from './front_office/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { SearchFlightComponent } from './front_office/search-flight/search-fligh
     CitiesComponent,
     FooterComponent,
     HomeComponent,
-    SearchFlightComponent
+    SearchFlightComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
