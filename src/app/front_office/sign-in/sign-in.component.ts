@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
-//this.router.navigate(['/status']);
+
 signInForm: FormGroup = new FormGroup({});
 submitted = false;
 
