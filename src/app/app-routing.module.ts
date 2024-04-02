@@ -8,6 +8,7 @@ import { UsersComponent } from './back_office/users/users.component';
 import { TicketComponent } from './back_office/ticket/ticket.component';
 import { FlightComponent } from './back_office/flight/flight/flight.component';
 import { HomeComponent } from './front_office/home/home.component';
+import { SignInComponent } from './front_office/sign-in/sign-in.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'tickets', component: TicketComponent },
   { path: 'flights', component: FlightComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'sign-in', component: SignInComponent },
 ];
 
 @NgModule({
