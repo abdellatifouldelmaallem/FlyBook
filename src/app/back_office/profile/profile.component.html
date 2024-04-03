@@ -1,3 +1,29 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="../../../assets/image/logo.jfif" alt="Company Logo" />
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="mt-2 text-white text-center">MENU</h2>
+  <ul class="list-unstyled text-center text-white">
+    <li mat-list-item class="d-flex align-items-center aligned-icon justify-content-center py-3 cursor" [routerLinkActive]="['list-item-active']" routerLink="/status">
+      <mat-icon>show_chart</mat-icon> status
+    </li>
+    <li mat-list-item class="d-flex align-items-center aligned-icon justify-content-center py-3 cursor" [routerLinkActive]="['list-item-active']" routerLink="/flights">
+      <mat-icon>flight</mat-icon> flight
+    </li>
+    <li mat-list-item class="d-flex align-items-center aligned-icon justify-content-center py-3 cursor" [routerLinkActive]="['list-item-active']" routerLink="/users">
+      <mat-icon>supervised_user_circle</mat-icon> users
+    </li>
+    <li mat-list-item class="d-flex align-items-center aligned-icon justify-content-center py-3 cursor" [routerLinkActive]="['list-item-active']" routerLink="/tickets">
+      <mat-icon>loyalty</mat-icon> tickets
+    </li>
+  </ul>
+</mat-nav-list>
+</mat-drawer>
+<mat-drawer-content>
+  <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
 <div class="container d-flex flex-column">
     <div class="page__box">
         <span>Profile</span>
@@ -35,3 +61,5 @@
           </div>
     </div>
 </div>
+</mat-drawer-content>
+</mat-drawer-container>

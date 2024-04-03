@@ -14,6 +14,11 @@ export class FlightComponent implements OnInit {
 
   chratOptions:any;
   Highcharts: typeof Highcharts = Highcharts;
+  sideBarOpen = true;
+
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 
   chratData = [
     {

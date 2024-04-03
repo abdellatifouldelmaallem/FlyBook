@@ -17,7 +17,11 @@ export class StatusComponent {
   constructor(public dialog: MatDialog) {}
 
   flights: Flight[] = Flights;
+  sideBarOpen = true;
 
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
   openDialog(): void {
     const dialogRef = this.dialog.open(AddFlightComponent, {
       width: '600px',

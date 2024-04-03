@@ -1,3 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 272px;
+}
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer {
+  background: #204fbd;
+}
+
+.logo {
+text-align: center;
+}
+
+.logo img {
+width: 100px;
+border-radius: 5px;
+}
+
+.mat-divider {
+border-top-width: 2px;
+border-color: white;
+}
+
+.aligned-icon mat-icon {
+margin-right: 5px;
+}
+
+.cursor{
+cursor: pointer;
+}
+.cursor:hover {
+color: #204fbd;
+background-color: white;
+}
+
+.list-item-active {
+color: #204fbd;
+background-color: white;
+}
 .page__box {
     min-height: 50px;
     background: #204fbd;

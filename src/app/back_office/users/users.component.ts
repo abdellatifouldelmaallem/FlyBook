@@ -14,6 +14,11 @@ export class UsersComponent {
   constructor(public dialog: MatDialog) {}
 
   Users: User[] = Users;
+  sideBarOpen = true;
+
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 
   dalete(){
     const dialogRef = this.dialog.open(ConfirmationDeleteComponent);

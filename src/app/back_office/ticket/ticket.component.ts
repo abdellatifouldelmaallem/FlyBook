@@ -14,6 +14,11 @@ export class TicketComponent {
   constructor(public dialog: MatDialog) {}
 
   Tickets: Ticket[] = Tickets;
+  sideBarOpen = true;
+
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 
   dalete(){
     const dialogRef = this.dialog.open(ConfirmationDeleteComponent);
